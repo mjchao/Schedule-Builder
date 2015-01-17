@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Course {
 
 	public String m_courseName;
+	public boolean m_isRepeatable = false;
 	public ArrayList< Course > m_prereqs = new ArrayList< Course >();
 	
 	public Course( String courseName ) {
