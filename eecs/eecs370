@@ -1,0 +1,7 @@
+Title: EECS 370
+
+Credits: 4
+
+Description: 	Introduction to Computer Organization --- Basic concepts of computer organization and hardware.   Instructions executed by a processor and how to use these instructions in simple assembly-language programs.  Stored-program concept.  Data-path and control for multiple implementations of a processor.  Performance evaluation, pipelining, caches, virtual memory, input/output.
+
+Pre-requisites: EECS203,EECS270,MATH465,MATH565 EECS280,EECS203
