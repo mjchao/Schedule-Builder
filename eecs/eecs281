@@ -1,0 +1,5 @@
+Title: EECS281
+
+Description: Data Structures and Algorithms --- Introduction to the algorithm analysis and O-notation; Fundamental data structures including lists, stacks, queues, priority queues, hash tables, binary trees, search trees, balanced, trees, and graphs; searching and sorting algorithms; recursive algorithms; basic graph algorithms; introduction to greedy algorithms and divide and conquer strategy.  Several programming assignments.
+
+Pre-requisites: EECS203,MATH465,565 EECS280
