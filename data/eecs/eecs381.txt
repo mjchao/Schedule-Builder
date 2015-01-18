@@ -1,7 +1,10 @@
 Title: EECS381
 
+Name:  Object-Oriented and Advanced Programming
+
 Credits: 4
 
 Description: This is a relatively new elective course that introduces advanced concepts and techniques in practical C/C++ programming. We will start with a quick, but deep, introduction to important topics in C programming, and then the course will emphasize object-oriented programming with the use of single and multiple inheritance and polymorphism, and using the Standard Library algorithms and containers.
 
-Pre-requisites: EECS281 
+Pre-requisites: EECS281
+

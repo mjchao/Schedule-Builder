@@ -1,0 +1,10 @@
+Title: EECS586
+
+Name:  Design and Analysis of Algorithms
+
+Credits: 4
+
+Description: We will cover the design and analysis of efficient algorithms to solve fundamental computational problems in searching, sorting, graph theory, geometry, optimization, and decision theory. We cover a variety of algorithmic design principles, such as greedy algorithms, divide-and-conquer, and dynamic programming. We also cover the ways in which one analyzes the efficiency of algorithms, through the use of "generalized O-notation" for worst-case, expected-case, and competitive analyses, and some techniques for proving that an algorithm is an optimal solution to a problem.
+
+Pre-requisites: EECS281
+

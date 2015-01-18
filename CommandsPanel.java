@@ -22,7 +22,7 @@ public class CommandsPanel extends JPanel {
 		tbCommands = new CommandsTab( pnlCourses , pnlReqs , pnlInfo );
 		add( tbCommands , BorderLayout.CENTER );
 		this.pnlBack = new BackPanel();
-		add( pnlBack , BorderLayout.SOUTH );
+		add( pnlBack , BorderLayout.NORTH );
 		
 	}
 	
@@ -40,6 +40,7 @@ public class CommandsPanel extends JPanel {
 			this.pnlCourses = pnlCourses;
 			this.addTab( "Courses" , new JScrollPane( this.pnlCourses ) );
 			this.pnlInfo = pnlInfo;
+			this.pnlInfo.setCommandsTab( CommandsPanel.this );
 			this.addTab( "Course Info" , new JScrollPane( pnlInfo ) );
 		}
 		
@@ -65,13 +66,17 @@ public class CommandsPanel extends JPanel {
 		tbCommands.setSelectedIndex( 1 );
 	}
 	
+	public void showCourseInfoTab() {
+		tbCommands.setSelectedIndex( 2 );
+	}
+	
 	private class BackPanel extends JPanel {
 		
 		final private JButton cmdBack;
 		
 		public BackPanel() {
 			setLayout( new FlowLayout( FlowLayout.CENTER ) );
-			this.cmdBack = new JButton( "Back" );
+			this.cmdBack = new JButton( "<==" );
 			this.cmdBack.addActionListener( new ActionListener() {
 
 				@Override
@@ -83,5 +88,15 @@ public class CommandsPanel extends JPanel {
 			
 			add( this.cmdBack );
 		}
+	}
+	
+	public void loadCourseData( Course... courses) {
+		this.tbCommands.pnlInfo.loadCourses( courses );
+		showCourseInfoTab();
+	}
+	
+	public void loadReq( Req r ) {
+		this.tbCommands.pnlCourses.filter( r );
+		showCourseTab();
 	}
 }

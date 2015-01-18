@@ -1,0 +1,10 @@
+Title: EECS545
+
+Name:  Machine Learning
+
+Credits: 3
+
+Description: Survey of recent research on learning in artificial intelligence systems. Topics include learning based on examples, instructions, analogy, discovery, experimentation, observation, problem-solving and explanation. The cognitive aspects of learning will also be studied.
+
+Pre-requisites: EECS492
+

@@ -33,6 +33,7 @@ public class Sandbox extends JPanel {
 	private ReqsPanel pnlReqs;
 	private CoursesPanel pnlCourses;
 	private SemesterPanel pnlSelectedSemester;
+	private CommandsPanel pnlCommands;
 	
 	public Sandbox() {
 		setLayout( null );
@@ -44,6 +45,10 @@ public class Sandbox extends JPanel {
 		}
 		setSelectedSemester( this.m_semesters.get( 0 ) );
 		setBackground( Color.white );
+	}
+	
+	public void setCommandsPanel( CommandsPanel cmds ) {
+		this.pnlCommands = cmds;
 	}
 	
 	public void setReqsPanel( ReqsPanel reqs ) {
@@ -163,15 +168,28 @@ public class Sandbox extends JPanel {
 			for ( CourseButton b : courseButtons ) {
 				int courseStatus = CourseButton.OKAY;
 				for ( CourseGroup g : b.getPrereqs() ) {
+					int groupStatus = CourseButton.MISSING_PREREQ;
 					for ( Course c : g.m_courses ) {
-						if ( !coursesTaken.contains( c ) ) {
-							if ( coursesPossiblyTaken.contains( c )  ) {
-								courseStatus = CourseButton.POSSIBLY_MISSING_PREREQS;
-							}
-							else {
-								courseStatus = CourseButton.MISSING_PREREQ;
-							}
+						if ( coursesTaken.contains( c ) ) {
+							groupStatus = CourseButton.OKAY;
 							break;
+						}
+						else {
+							if ( coursesPossiblyTaken.contains( c )  ) {
+								if ( groupStatus == CourseButton.MISSING_PREREQ ) {
+									groupStatus = CourseButton.POSSIBLY_MISSING_PREREQS;
+								}
+							}
+						}
+					}
+					if ( courseStatus == CourseButton.OKAY ) {
+						if ( groupStatus == CourseButton.MISSING_PREREQ || groupStatus == CourseButton.POSSIBLY_MISSING_PREREQS ) {
+							courseStatus = groupStatus;
+						}
+					}
+					else if ( courseStatus == CourseButton.POSSIBLY_MISSING_PREREQS ) {
+						if ( groupStatus == CourseButton.MISSING_PREREQ ) {
+							courseStatus = groupStatus;
 						}
 					}
 				}
@@ -383,6 +401,11 @@ public class Sandbox extends JPanel {
 		
 		public CourseButtonListener( CourseButton b ) {
 			this.m_courseButton = b;
+		}
+		
+		@Override
+		public void mouseClicked( MouseEvent e ) {
+			pnlCommands.loadCourseData( m_courseButton.getCourse() );
 		}
 		
 		@Override

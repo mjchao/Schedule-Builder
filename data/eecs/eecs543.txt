@@ -1,0 +1,10 @@
+Title: EECS543
+
+Name:  Knowledge-Based Systems
+
+Credits: 3
+
+Description: Techniques and principles for developing application software based on explicit representation and manipulation of domain knowledge, as applied to areas such as pattern matching, problem-solving, automated planning, and natural language processing. Discussion of major programming approaches used in the design and development of knowledge-based systems
+
+Pre-requisites: EECS281
+

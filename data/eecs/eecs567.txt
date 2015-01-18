@@ -1,0 +1,10 @@
+Title: EECS567
+
+Name:  Introduction to Robotics
+
+Credits: 3
+
+Description: Introduction to robots considered as electro-mechanical computational systems performing work on the physical world. Data structures representing kinematics and dynamics of rigid body motions and forces and controllers for achieving them. Emphasis on building and programming real robotic systems and on representing the work they are to perform.
+
+Pre-requisites:  
+

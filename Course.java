@@ -47,4 +47,20 @@ public class Course {
 	public String getShortDisplayString() {
 		return this.m_courseId;
 	}
+	
+	public String getReqsDisplayString() {
+		if ( this.m_prereqs.size() == 0 ) {
+			return "";
+		}
+		else if ( this.m_prereqs.size() == 1 ) {
+			return this.m_prereqs.get( 0 ).toString();
+		}
+		else {
+			String rtn = this.m_prereqs.get( 0 ).toString();
+			for ( int i=1 ; i<this.m_prereqs.size() ; i++ ) {
+				rtn += "\n" + this.m_prereqs.get( i ).toString();
+			}
+			return rtn;
+		}
+	}
 }

@@ -90,17 +90,17 @@ public class ReqsPanel extends JPanel {
 			if ( r instanceof ReqCourse || r instanceof ReqCourses ) {
 				ReqDisplay disp = this.pnlList.getGraphics( r );
 				disp.markAsIncomplete();
-				for ( Course c : completedCoursework ) {
-					if ( r.satisfiesReq( c ) ) {
-						completedCoursework.remove( c );
-						disp.markAsComplete();
-						break;
-					}
-				}
 				for ( Course c : possiblyCompleteCoursework ) {
 					if ( r.satisfiesReq( c ) ) {
 						possiblyCompleteCoursework.remove( c );
 						disp.markAsPossiblyComplete();
+						break;
+					}
+				}
+				for ( Course c : completedCoursework ) {
+					if ( r.satisfiesReq( c ) ) {
+						completedCoursework.remove( c );
+						disp.markAsComplete();
 						break;
 					}
 				}

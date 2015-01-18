@@ -1,0 +1,10 @@
+Title: EECS497
+
+Name:  EECS Major Design Projects *
+
+Credits: 4
+
+Description: Professional problem-solving methods developed through intensive group studies. Normally one significant design project is chosen for entire class requiring multiple EECS disciplines and teams. Use of analytic, computer, design, and experimental techniques where applicable are used. Projects are often interdisciplinary allowing non-EECS seniors to also take the course (consult with instructor).
+
+Pre-requisites:  
+

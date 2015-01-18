@@ -1,7 +1,10 @@
 Title: EECS483
 
+Name:  Compiler Construction
+
 Credits: 4
 
 Description: Introduction to compiling techniques including parsing algorithms, semantic processing and optimization. Students implement a compiler for a substantial programming language using a compiler generating system.
 
-Pre-requisites: EECS281 
+Pre-requisites: EECS281,EECS398
+

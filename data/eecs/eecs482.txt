@@ -1,7 +1,10 @@
 Title: EECS482
 
+Name:  Introduction to Operating Systems
+
 Credits: 4
 
 Description: Operating system design and implementation: multi-tasking; concurrency and synchronization; inter-process communication; deadlock; scheduling; resource allocation; memory and storage management; input-output; file systems; protection and security. Students write several substantial programs dealing with concurrency and synchronization in a multi-task environment, with file systems, and with memory management.
 
-Pre-requisites: EECS281 
+Pre-requisites: EECS281 EECS370
+

@@ -1,0 +1,10 @@
+Title: EECS570
+
+Name:  Parallel Computer Architecture
+
+Credits: 4
+
+Description: Architectures for explicit parallelism. Multithreaded processors, small- and large-scale multiprocessor systems. Shared-memory coherence and consistency. Effect of architecture on communication latency, bandwidth, and overhead. Latency tolerance techniques. Interconnection networks. Case studies. Term projects
+
+Pre-requisites: EECS470
+

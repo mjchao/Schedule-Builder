@@ -1,7 +1,10 @@
 Title: EECS478
 
+Name:  Logic Circuit Synthesis and Optimization
+
 Credits: 4
 
 Description: Advanced design of logic circuits. Technology constraints. Theoretical foundations. Computer-aided design algorithms. Two-level and multilevel optimization of combinational circuits. Optimization of finite-state machines. High-level synthesis techniques: modeling, scheduling, and binding. Verification and testing.
 
-Pre-requisites: EECS281 
+Pre-requisites: EECS270 EECS203
+

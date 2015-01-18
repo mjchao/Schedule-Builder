@@ -4,12 +4,12 @@ import java.awt.FlowLayout;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import javax.swing.JApplet;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
 
-public class Main extends JApplet {
+public class Main extends JFrame {
 
 	/**
 	 * 
@@ -43,6 +43,7 @@ public class Main extends JApplet {
 		
 		pnlSandbox.setReqsPanel( pnlReqs );
 		pnlSandbox.setCoursesPanel( pnlCourses );
+		pnlSandbox.setCommandsPanel( tbCommands );
 		
 		pnlReqs.setCoursesPanel( pnlCourses );
 		
@@ -59,6 +60,12 @@ public class Main extends JApplet {
 		for ( Req r : reqs ) {
 			pnlReqs.addReqs( r );
 		}
+	}
+	
+	final public static void main( String[] args ) throws IOException {
+		Main m = new Main();
+		m.pack();
+		m.setVisible( true );
 	}
 	
 }

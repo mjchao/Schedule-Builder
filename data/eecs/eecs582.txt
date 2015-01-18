@@ -1,0 +1,10 @@
+Title: EECS582
+
+Name:  Advanced Operating Systems
+
+Credits: 4
+
+Description: Course discusses advanced topics and research issues in operating systems. Topics will be drawn from a variety of operating systems areas such as distributed systems and languages, networking, security, and protection, realtime systems, modeling and analysis, etc.
+
+Pre-requisites: EECS482
+

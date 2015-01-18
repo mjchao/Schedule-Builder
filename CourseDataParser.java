@@ -50,6 +50,7 @@ public class CourseDataParser {
 		        }
 		        else if(text.contains("Pre-requisites:") != false){
 		        	prereqs = text.substring(16);
+		        	prereqs = prereqs.trim();
 		        }
 		    }
 		} catch (FileNotFoundException e) {
@@ -166,14 +167,19 @@ public class CourseDataParser {
 		if ( this.prereqs == null ) {
 			this.prereqs = "";
 		}
+		this.prereqs = this.prereqs.trim();
 		String[] andReqs = this.prereqs.split( " " );
 		for ( String and : andReqs ) {
 			ArrayList< String > courseGroup = new ArrayList< String >();
 			String[] orReqs = and.split( "," );
 			for ( String s : orReqs ) {
-				courseGroup.add( s );
+				if ( s.trim().length() >= 1 ) {
+					courseGroup.add( s );
+				}
 			}
-			rtn.add( courseGroup );
+			if ( courseGroup.size() > 0 ) {
+				rtn.add( courseGroup );
+			}
 		}
 		return rtn;
 	}
@@ -187,8 +193,8 @@ public class CourseDataParser {
 		return replacedFinal;
 	}
 	
-	
-	/*public static void main(String args[]){
+	/*
+	public static void main(String args[]){
 		
 		CourseDataParser test = new CourseDataParser("data/eecs/eecs281");
 		
@@ -202,7 +208,7 @@ public class CourseDataParser {
 			for ( String  s : l1 ) {
 				System.out.print( s + " or " );
 			}
-			System.out.println();
+			System.out.println( " and ");
 		}
 		//test.prerequisites(test.prereqs);
 

@@ -1,7 +1,10 @@
 Title: EECS481
 
+Name:  Software Engineering
+
 Credits: 4
 
 Description: Pragmatic aspects of the production of software systems, dealing with structuring principles, design methodologies and informal analysis. Emphasis is given to development of large, complex software systems.Professional problem-solving methods developed through intensive group studies. Normally one significant design project is chosen for entire class requiring multiple EECS disciplines and teams. Use of analytic, computer, design, and experimental techniques where applicable are used. Projects are often interdisciplinary allowing non-EECS seniors to also take the course (consult with instructor).
 
-Pre-requisites: EECS281 
+Pre-requisites: EECS281
+

@@ -1,7 +1,10 @@
 Title: EECS470
 
+Name:  Computer Architecture
+
 Credits: 4
 
 Description: EECS 470 is an introductory graduate-level course in computer architecture. This course is intended to do two things: to give you a solid, detailed understanding of how computers are designed and implemented, including the central processor and memory and I/O interfaces; and to make you aware of the numerous tradeoffs in design and implementation, their interaction, their realization in both historical and state-of-the-art systems, and trends that will affect them in future systems. 
 
-Pre-requisites: EECS281 
+Pre-requisites: EECS270 EECS370
+

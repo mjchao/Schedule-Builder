@@ -1,0 +1,10 @@
+Title: EECS595
+
+Name:  Natural Language Processing
+
+Credits: 3
+
+Description: A survey of syntactic and semantic theories of natural language processing, including unification-based grammars, methods of parsing, and a wide range of semantic theories from artificial intelligence as well as from philosophy of language. Programming is optional, though a project is normally required.
+
+Pre-requisites:  
+

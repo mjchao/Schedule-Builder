@@ -1,0 +1,10 @@
+Title: EECS441
+
+Name:  Mobile App Development for Entrepreneurs
+
+Credits: 3
+
+Description: The use of mobile technologies is fast becoming integral to lives of individuals and groups across the planet. In this course, working in teams, students will propose, design, develop, test, and market software for mobile devices. Not only will best practices for mobile software development be learned, but best practices for entrepreneurs will also be learned. As well, students will put their creations up for sale/distribution by uploading their apps to the appropriate market place.
+
+Pre-requisites: EECS281 EECS370
+

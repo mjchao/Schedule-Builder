@@ -1,0 +1,10 @@
+Title: EECS588
+
+Name:  Computer and Network Security
+
+Credits: 4
+
+Description: This course covers foundational work and current topics in computer systems security. We will read research papers and discuss attacks and defenses against operating systems, client-side software, web applications, and IP networks. Students will be prepared for research in computer security and for security-related research in other subfields, and they will gain hands-on experience designing and evaluating secure systems.
+
+Pre-requisites: EECS482,EECS489
+

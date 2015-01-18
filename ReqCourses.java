@@ -10,7 +10,10 @@ public class ReqCourses extends Req {
 	}
 	@Override
 	String getDisplay() {
-		if ( m_courses.size() == 1 ) {
+		if ( m_courses.size() == 0 ) {
+			return "-";
+		}
+		else if ( m_courses.size() == 1 ) {
 			return m_courses.get( 0 ).getDisplayString();
 		}
 		else {

@@ -1,0 +1,10 @@
+Title: EECS592
+
+Name:  Advanced Artificial Intelligence
+
+Credits: 4
+
+Description: Advanced topics in artificial intelligence. Issues in knowledge representation, knowledge-based systems, problem solving, planning and other topics will be discussed. Students will work on several projects.
+
+Pre-requisites: EECS492
+

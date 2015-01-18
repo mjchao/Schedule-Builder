@@ -1,6 +1,7 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Cursor;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -116,7 +117,14 @@ public class CoursesPanel extends JPanel {
 				this.remove( this.cmdRemoveFilter );
 			}
 			else {
-				this.lblFilter.setText( "Filter: " + r.getDisplay() );
+				String filter = "Filter: " + r.getDisplay();
+				this.lblFilter.setToolTipText( filter );
+				if ( filter.length() < 30 ) {
+					this.lblFilter.setText( "Filter: " + r.getDisplay() );
+				}
+				else {
+					this.lblFilter.setText( ("Filter: " + r.getDisplay()).substring( 0 , 30 ) + "..." );
+				}
 				if ( this.cmdRemoveFilter.getParent() == null ) {
 					this.add( this.cmdRemoveFilter );
 				}

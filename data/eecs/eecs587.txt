@@ -1,0 +1,10 @@
+Title: EECS587
+
+Name:  Parallel Computing
+
+Credits: 4
+
+Description: The development of programs for parallel computers. Basic concepts such as speedup, load balancing, latency, system taxonomies. Design of algorithms for idealized models. Programming on parallel systems such as shared or distributed memory machines, networks. Grid computing. Performance analysis.
+
+Pre-requisites: EECS281
+

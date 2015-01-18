@@ -1,0 +1,10 @@
+Title: EECS594
+
+Name:  Introduction to Adaptive Systems
+
+Credits: 3
+
+Description: Many of our most difficult contemporary problems depend upon an understanding of systems consisting of agents that adapt and learn: ecosystems, markets, language acquisition and evolution, political systems, the Internet, nervous systems, immune systems, reaction networks in biological cells, and so on. These systems, called complex adaptive systems (cas), exhibit properties such as "emergent" structures, "complex" conditional interactions, perpetual novelty in behavior, and diversity in agents (there is no "best" agent). Because of these properties, cas require novel techniques for analysis and understanding. This class will introduce and explore techniques, such as agent-based modeling, that have been most effective in helping us to explore and understand the behavior of cas.
+
+Pre-requisites: EECS281
+
