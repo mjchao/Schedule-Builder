@@ -160,15 +160,17 @@ public class Sandbox extends JPanel {
 			ArrayList< CourseButton > courseButtons = getCoursesInSemester( i );
 			for ( CourseButton b : courseButtons ) {
 				int courseStatus = CourseButton.OKAY;
-				for ( Course c : b.getPrereqs() ) {
-					if ( !coursesTaken.contains( c ) ) {
-						if ( coursesPossiblyTaken.contains( c )  ) {
-							courseStatus = CourseButton.POSSIBLY_MISSING_PREREQS;
+				for ( CourseGroup g : b.getPrereqs() ) {
+					for ( Course c : g.m_courses ) {
+						if ( !coursesTaken.contains( c ) ) {
+							if ( coursesPossiblyTaken.contains( c )  ) {
+								courseStatus = CourseButton.POSSIBLY_MISSING_PREREQS;
+							}
+							else {
+								courseStatus = CourseButton.MISSING_PREREQ;
+							}
+							break;
 						}
-						else {
-							courseStatus = CourseButton.MISSING_PREREQ;
-						}
-						break;
 					}
 				}
 				if ( courseStatus == CourseButton.OKAY ) {
@@ -320,7 +322,7 @@ public class Sandbox extends JPanel {
 			return this.m_course;
 		}
 		
-		public ArrayList< Course > getPrereqs() {
+		public ArrayList< CourseGroup > getPrereqs() {
 			return this.m_course.m_prereqs;
 		}
 		

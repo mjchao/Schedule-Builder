@@ -5,19 +5,22 @@ public class Course {
 
 	public String m_courseName;
 	public boolean m_isRepeatable = false;
-	public ArrayList< Course > m_prereqs = new ArrayList< Course >();
+	public ArrayList< CourseGroup > m_prereqs = new ArrayList< CourseGroup >();
+	
 	
 	public Course( String courseName ) {
 		this.m_courseName = courseName;
 	}
 	
 	public boolean isPrereqFor( Course other ) {
-		if ( other.m_prereqs.contains( this ) ) {
-			return true;
+		for ( CourseGroup g : other.m_prereqs ) {
+			for ( Course c : g.m_courses ) {
+				if ( this.equals( c ) ) {
+					return true;
+				}
+			}
 		}
-		else {
-			return false;
-		}
+		return false;
 	}
 	
 	@Override
@@ -28,5 +31,10 @@ public class Course {
 		else {
 			return false;
 		}
+	}
+
+	@Override
+	public int hashCode() {
+		return super.hashCode();
 	}
 }

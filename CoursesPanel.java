@@ -135,6 +135,10 @@ public class CoursesPanel extends JPanel {
 		public boolean isAdded() {
 			return this.m_isAdded;
 		}
+		
+		public boolean isAddable() {
+			return !this.m_isAdded || this.m_course.m_isRepeatable;
+		}
 	}
 	
 	private class CourseDisplayListener extends MouseAdapter {
@@ -157,9 +161,11 @@ public class CoursesPanel extends JPanel {
 		
 		@Override
 		public void mousePressed( MouseEvent e ) {
-			CoursesPanel.this.pnlSandbox.addCourse( this.m_courseDisp.getCourse() );
-			this.m_courseDisp.setLostFocus();
-			this.m_courseDisp.setGainedFocus();
+			if ( this.m_courseDisp.isAddable() ) {
+				CoursesPanel.this.pnlSandbox.addCourse( this.m_courseDisp.getCourse() );
+				this.m_courseDisp.setLostFocus();
+				this.m_courseDisp.setGainedFocus();
+			}
 		}
 	}
 	
