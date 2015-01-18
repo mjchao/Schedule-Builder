@@ -1,0 +1,7 @@
+Title: EECS467
+
+Credits: 4
+
+Description: A theoretical and hands-on introduction to robotics from a computer science perspective. Topics: kinematics, inverse kinematics, sensors, sensor processing, motion planning, control, Kalman filters, dynamics, embedded systems, real time operating systems, state estimation and mapping, and artificial intelligence methods. Emphasizes laboratory design and programming of robotic systems.
+
+Pre-requisites: EECS281 

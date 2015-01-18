@@ -1,0 +1,7 @@
+Title: EECS427
+
+Credits: 4
+
+Description: Design techniques for rapid implementations of very large-scale integrated (VLSI) circuits, MOS technology and logic. Structured design. Design rules, layout procedures. Design aids: layout, design rule checking, logic, and circuit simulation. Timing. Testability. Architectures for VLSI. Projects to develop and lay out circuits.
+
+Pre-requisites: EECS281 

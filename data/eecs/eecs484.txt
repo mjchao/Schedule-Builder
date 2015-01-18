@@ -1,0 +1,7 @@
+Title: EECS484
+
+Credits: 4
+
+Description: Concepts and methods for the design, creation, query and management of large enterprise databases. Functions and characteristics of the leading database management systems. Query languages such as SQL, forms, embedded SQL, and application development tools. Database design, integrity, normalization, access methods, query optimization, transaction management and concurrency control and recovery.
+
+Pre-requisites: EECS281 

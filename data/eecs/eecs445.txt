@@ -1,0 +1,7 @@
+Title: EECS445
+
+Credits: 4
+
+Description: Theory and implementation of state of the art machine learning algorithms for large-scale real-world applications. Topics include supervised learning (regression, classification, kernal methods, neural networks, and regularization) and unsupervised learning, (clustering, density estimation, and dimensionality and reduction).
+
+Pre-requisites: EECS281 

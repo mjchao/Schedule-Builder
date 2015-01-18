@@ -1,0 +1,7 @@
+Title: EECS475
+
+Credits: 4
+
+Description: This course will study fundamental concepts, algorithms, encryption schemes, and protocols in cryptography. Main topics include: symmetric (private key) encryption, public key encryption, hash functions, digital signatures, and key distribution. The course emphasizes a rigorous mathematical study of the various cryptographic schemes and their security in terms of algorithmic complexity. A nontrivial part of the course will be devoted to algorithmic and mathematical background from number theory and algebra needed to gain a solid understanding of cryptography. Popular cryptographic schemes such as AES and RSA will be highlighted and their security will be rigorously investigated. Detailed syllabus is available from the course web site (link below). 
+
+Pre-requisites: EECS281 
