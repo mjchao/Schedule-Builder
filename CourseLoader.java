@@ -58,6 +58,7 @@ public class CourseLoader {
 		Course rtn = new Course( p.getTitle() );
 		rtn.m_numCredits = p.getNumCredits();
 		rtn.m_courseName = p.getCourseName();
+		rtn.m_description = p.getDescription();
 		return rtn;
 	}
 	

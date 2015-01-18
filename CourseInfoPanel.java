@@ -93,6 +93,14 @@ public class CourseInfoPanel extends JPanel {
 			});
 			add( cmdViewReqs );
 			
+			String description = c.m_description;
+			for ( int i=0 ; i*75 < c.m_description.length() ; i++ ) {
+				description = description.substring( 0 , i*75 ) + "<p>" + description.substring( i*75 , description.length() );
+			}
+			
+			JLabel lblDescription = new JLabel( "<html>Description: <p>" + description + "</html>" );
+			add( lblDescription );
+			
 			this.setBorder( BorderFactory.createEtchedBorder() );
 			
 		}

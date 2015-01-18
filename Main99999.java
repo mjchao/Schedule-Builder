@@ -3,6 +3,7 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -19,8 +20,8 @@ public class Main99999 extends JFrame {
 	public Main99999() throws IOException {
 		CourseLoader loader = new CourseLoader();
 		ArrayList< Course > courses = loader.getCourses();
-		
-		ReqDataParser reqParser = new ReqDataParser( "/Users/mjchao/Desktop/Java/Eclipse Workspace/Graduation Planner/reqdata/eecsmajor" ,  courses );
+
+		ReqDataParser reqParser = new ReqDataParser( "reqdata/eecsmajor",  courses );
 		ArrayList< Req > reqs = reqParser.getReqs();
 		
 		setLayout( new BorderLayout() );

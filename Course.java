@@ -7,6 +7,7 @@ public class Course {
 	public String m_courseName;
 	public int m_numCredits;
 	public boolean m_isRepeatable = false;
+	public String m_description = "";
 	public ArrayList< CourseGroup > m_prereqs = new ArrayList< CourseGroup >();
 	
 	
