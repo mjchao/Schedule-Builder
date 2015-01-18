@@ -131,11 +131,13 @@ public class ReqsPanel extends JPanel {
 		final public int INCOMPLETE = 0;
 		private int m_status = INCOMPLETE;
 	
+		
 		final private Border FOCUS_BORDER = BorderFactory.createRaisedBevelBorder();
 		final private Border LOST_FOCUS_BORDER = BorderFactory.createEmptyBorder();
 		
 		final private Color COMPLETE_COLOR = new Color( 100 , 200 , 0 );
 		final private Color POSSIBLY_COMPLETE_COLOR = Color.gray;
+		
 		public ReqDisplay( Req r ) {
 			this.m_req = r;
 			this.setLayout( new BorderLayout() );
@@ -160,13 +162,23 @@ public class ReqsPanel extends JPanel {
 		}
 		
 		public void setGainedFocus() {
-			this.setBorder( FOCUS_BORDER );
+			//this.setBorder( FOCUS_BORDER );
+			this.lblDisplay.setText( "<html><u>" + this.m_req.getDisplay() + "</u></html>" );
+			
+			Color fg = Color.blue;
+			this.setForeground( fg );
+			
 			Color bg = Color.gray;
 			this.setBackground( bg );
 		}
 		
 		public void setLostFocus() {
-			this.setBorder( LOST_FOCUS_BORDER );
+			//this.setBorder( LOST_FOCUS_BORDER );
+			this.lblDisplay.setText( this.m_req.getDisplay() );
+			
+			Color fg = Color.black;
+			this.setForeground( fg );
+			
 			Color bg = UIManager.getLookAndFeelDefaults().getColor( "Label.background" );
 			this.setBackground( bg );
 		}

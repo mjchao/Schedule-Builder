@@ -80,6 +80,8 @@ public class CoursesPanel extends JPanel {
 			this.lblCourseName = new JLabel();
 			this.lblCourseName.setText( this.m_course.m_courseName );
 			add( this.lblCourseName );
+			
+			reflectNotAdded();
 		}
 		
 		public Course getCourse() {
@@ -88,14 +90,24 @@ public class CoursesPanel extends JPanel {
 		
 		public void setGainedFocus() {
 			if ( !this.m_isAdded || this.m_course.m_isRepeatable ) {
-				this.setBorder( FOCUS_BORDER );
+				//this.setBorder( FOCUS_BORDER );
+				this.lblCourseName.setText( "<html><u>" + this.m_course.m_courseName + "</u><html>" );
+				
+				Color fg = Color.blue;
+				this.lblCourseName.setForeground( fg );
+				
 				Color bg = Color.gray;
 				this.setBackground( bg );
 			}
 		}
 		
 		public void setLostFocus() {
-			this.setBorder( LOST_FOCUS_BORDER );
+			//this.setBorder( LOST_FOCUS_BORDER );
+			this.lblCourseName.setText( this.m_course.m_courseName );
+			
+			Color fg = Color.black;
+			this.lblCourseName.setForeground( fg );
+			
 			Color bg = UIManager.getLookAndFeelDefaults().getColor( "Label.background" );
 			this.setBackground( bg );
 		}

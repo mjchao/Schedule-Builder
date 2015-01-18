@@ -38,7 +38,7 @@ public class CourseDataParser {
 		        	title = text.substring(7);
 		        }
 		        else if(text.contains("Credits:") != false){
-		        	String temp = text.substring(8);
+		        	String temp = text.substring(9);
 		        	credits = Integer.parseInt(temp);
 		        }
 		        else if(text.contains("Description:") != false){
@@ -151,6 +151,9 @@ public class CourseDataParser {
 	
 	public ArrayList< ArrayList< String > > getPrereqs() {
 		ArrayList< ArrayList< String > > rtn = new ArrayList< ArrayList< String > >();
+		if ( this.prereqs == null ) {
+			this.prereqs = "";
+		}
 		String[] andReqs = this.prereqs.split( " " );
 		for ( String and : andReqs ) {
 			ArrayList< String > courseGroup = new ArrayList< String >();
