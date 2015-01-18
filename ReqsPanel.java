@@ -80,7 +80,7 @@ public class ReqsPanel extends JPanel {
 		ArrayList< Req > allReqs = this.pnlList.getData();
 		Collections.sort( allReqs , reqComparator );
 		for ( Req r : allReqs ) {
-			if ( r instanceof ReqCourse ) {
+			if ( r instanceof ReqCourse || r instanceof ReqCourses ) {
 				ReqDisplay disp = this.pnlList.getGraphics( r );
 				disp.markAsIncomplete();
 				for ( Course c : completedCoursework ) {

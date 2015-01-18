@@ -1,5 +1,6 @@
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javax.swing.JApplet;
@@ -14,9 +15,12 @@ public class Main extends JApplet {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public Main() {
+	public Main() throws IOException {
 		CourseLoader loader = new CourseLoader();
 		ArrayList< Course > courses = loader.getCourses();
+		
+		ReqDataParser reqParser = new ReqDataParser( "/Users/mjchao/Desktop/Java/Eclipse Workspace/Graduation Planner/reqdata/eecsmajor" ,  courses );
+		ArrayList< Req > reqs = reqParser.getReqs();
 		
 		setLayout( new BorderLayout() );
 		
@@ -56,6 +60,10 @@ public class Main extends JApplet {
 					}
 				}
 			}
+		}
+		
+		for ( Req r : reqs ) {
+			pnlReqs.addReqs( r );
 		}
 	}
 	
