@@ -1,0 +1,10 @@
+Title: EECS579
+
+Name:  Digital System Testing
+
+Credits: 4
+
+Description: Overview of fault-tolerant computing. Fault sources and models. Testing process. Combinational circuit testing. D-Algorithm and PODEM. Sequential circuit testing. Checking experiments. RAM and microprocessor testing. Fault simulation. Design for testability. Testability measures. Self-testing circuits and systems.
+
+Pre-requisites:  
+

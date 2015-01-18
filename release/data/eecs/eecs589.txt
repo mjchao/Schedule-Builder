@@ -1,0 +1,10 @@
+Title: EECS589
+
+Name:  Advanced Computer Networks
+
+Credits: 4
+
+Description: Advanced topics and research issues in computer networks. Topics include routing protocols, multicast delivery, congestion control, quality of service support, network security, pricing and accounting, and wireless access and mobile networking. Emphasis is placed on performance trade-offs in protocol and architecture designs. Readings assigned from research publications. A course project allows in-depth exploration of topics of interest.
+
+Pre-requisites: EECS489
+

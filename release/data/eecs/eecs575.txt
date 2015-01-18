@@ -1,0 +1,10 @@
+Title: EECS575
+
+Name:  Advanced Cryptography
+
+Credits: 4
+
+Description: A rigorous introduction to the design of cryptosystems and to cryptanalysis. Topics include cryptanalysis of classical cryptosystems; theoretical analysis of one-way functions; DES and differential cryptanalysis; the RSA cryptosystem; ElGamal, elliptic, hyperelliptic and hidden mononomial cryptosystems; attacks on signature schemes, identifi cation schemes and authentication codes; secret sharing; and zero knowledge
+
+Pre-requisites: EECS203 EECS574
+

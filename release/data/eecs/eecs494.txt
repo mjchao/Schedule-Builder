@@ -1,0 +1,10 @@
+Title: EECS494
+
+Name:  Computer Game Design and Development
+
+Credits: 4
+
+Description: Concepts and methods for the design and development of computer games. Topics include: history of games, 2D graphics and animation, sprites, 3D animation, binary space partition trees, software engineering, game design, interactive fiction, user interfaces, artificial intelligence, game SDK’s, networking, multi-player games, game development environments, commercialization of software.
+
+Pre-requisites: EECS281
+

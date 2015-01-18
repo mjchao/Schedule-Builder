@@ -1,0 +1,10 @@
+Title: EECS584
+
+Name:  Advanced Database Systems
+
+Credits: 4
+
+Description: Survey of advanced topics in database systems. Distributed databases, query processing, transaction processing. Effects of data models: object-oriented and deductive databases; architectures: main-memory and parallel repositories; distributed organizations: client-server and heterogeneous systems. Basic data management for emerging areas: internet applications, OLAP, data mining. Case studies of existing systems. Group projects.
+
+Pre-requisites: EECS484
+

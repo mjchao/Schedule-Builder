@@ -1,0 +1,10 @@
+Title: EECS487
+
+Name:  Interactive Computer Graphics
+
+Credits: 4
+
+Description: Computer graphics hardware, line drawing, rasterization, anti-aliasing, graphical user interface (GUI), affine geometry, projective geometry, geometric transformation, polygons, curves, splines, solid models, lighting and shading, image rendering, ray tracing, radiosity, hidden surface removal, texture mapping, animation, virtual reality, and scientific visualization.
+
+Pre-requisites: EECS281
+

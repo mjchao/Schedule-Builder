@@ -1,0 +1,10 @@
+Title: EECS574
+
+Name:  Computational Complexity
+
+Credits: 4
+
+Description: Fundamentals of the theory of computation and complex theory. Computatability, undecidability, and logic. Relations between complexity classes, NP-completeness, P-completeness, and randomized computation. Applications in selected areas such as cryptography, logic programming, theorem proving, approximation of optimization problems, or parallel computing.
+
+Pre-requisites: EECS376
+

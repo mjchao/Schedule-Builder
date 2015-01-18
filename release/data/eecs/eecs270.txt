@@ -1,0 +1,10 @@
+Title: EECS270
+
+Name:  Introduction to Logic Design
+
+Credits: 4
+
+Description: Introduction to Logic Design Binary and non-binary systems, Boolean algebra digital design techniques, logic gates, logic minimization, standard combinational circuits, sequential circuits, flip-flops, synthesis of synchronous sequential circuits, PLA's, ROM's, RAM's, arithmetic circuits, computer-aided design. Laboratory includes hardware design and CAD experiments.
+
+Pre-requisites: EECS183,ENGR101
+

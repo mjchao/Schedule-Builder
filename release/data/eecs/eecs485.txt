@@ -1,0 +1,10 @@
+Title: EECS485
+
+Name:  Web Database and Information Systems
+
+Credits: 4
+
+Description: Design and use of databases in the Web context; data models, database design, replication issues, client/server systems, information retrieval, web server design; substantial project involving the development of a databasebacked web site.
+
+Pre-requisites: EECS281,EECS382
+

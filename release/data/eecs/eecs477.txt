@@ -1,0 +1,10 @@
+Title: EECS477
+
+Name:  Introduction to Algorithms
+
+Credits: 4
+
+Description: Fundamental techniques for designing efficient algorithms and basic mathematical methods for analyzing their performance. Paradigms for algorithm design: divide-and-conquer, greedy methods, graph search techniques, dynamic programming. Design of efficient data structures and analysis of the running time and space requirements of algorithms in the worst and average cases.
+
+Pre-requisites: EECS281,EECS398
+

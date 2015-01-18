@@ -1,0 +1,10 @@
+Title: EECS492
+
+Name:  Introduction to Artificial Intelligence
+
+Credits: 4
+
+Description: Fundamental concepts of AI, organized around the task of building computational agents. Core topics include search, logic, representation and reasoning, automated planning, decision making under uncertainty, and machine learning.
+
+Pre-requisites: EECS281
+

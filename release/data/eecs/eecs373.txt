@@ -1,0 +1,9 @@
+Title: EECS373
+
+Name:  Design of Microprocessor Based Systems
+
+Credits: 4
+
+Description: Principles of hardware and software microcomputer interfacing; digital logic design and implementation. Experiments with specially designed laboratory facilities. Introduction to digital development equipment and logic analyzers. Assembly language programming. Lecture and laboratory.
+
+Pre-requisites: EECS370 EECS270

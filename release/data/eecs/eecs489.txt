@@ -1,0 +1,10 @@
+Title: EECS489
+
+Name:  Computer Networks
+
+Credits: 4
+
+Description: Protocols and architectures of computer networks. Topics include client-server computing, socket programming, naming and addressing, media access protocols, routing and transport protocols, flow and congestion control, and other application-specific protocols. Emphasis is placed on understanding protocol design principles. Programming problems to explore design choices and actual implementation issues assigned.
+
+Pre-requisites: EECS482
+

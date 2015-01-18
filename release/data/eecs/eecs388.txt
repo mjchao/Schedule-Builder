@@ -1,0 +1,10 @@
+Title: EECS388
+
+Name:  Introduction to Computer Security
+
+Credits: 4
+
+Description: This course introduces the principles and practices of computer security as applied to software, host systems, and networks. It covers the foundations of building, using, and managing secure systems. Topics include standard cryptographic functions and protocols, threats and defenses for real-world systems, incident responses, and computer forensics. There will be homework exercises, programming projects, and a final exam.
+
+Pre-requisites: EECS281
+

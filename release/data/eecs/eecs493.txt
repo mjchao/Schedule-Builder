@@ -1,0 +1,10 @@
+Title: EECS493
+
+Name:  User Interface Development
+
+Credits: 4
+
+Description: Concepts and techniques for designing computer system user interfaces to be easy to learn and use, with an introduction to their implementation. Task analysis, design of functionality, display and interaction design, and usability evaluation. Interface programming using an object-oriented application framework. Fluency in a standard object-oriented programming language is assumed.
+
+Pre-requisites: EECS281,EECS398
+

@@ -1,0 +1,10 @@
+Title: EECS285
+
+Name:  A Programming Language or Computer System
+
+Credits: 2
+
+Description: A course covering a complex computer system or programming language. Programming problems will be assigned. Specific languages or systems to be offered will be announced in advance.
+
+Pre-requisites:  
+
