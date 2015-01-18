@@ -23,7 +23,7 @@ public class ReqDataParser {
 				while( st.hasMoreTokens() ) {
 					String courseName = st.nextToken();
 					for ( Course c : courses ) {
-						if ( c.m_courseName.equals( courseName ) ) {
+						if ( c.m_courseId.equals( courseName ) ) {
 							coursesInReq.add( c );
 							break;
 						}

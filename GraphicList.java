@@ -2,7 +2,6 @@
 
 import java.awt.GridLayout;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 
@@ -138,6 +137,18 @@ public class GraphicList< E , R extends JComponent > extends JPanel {
 			}
 		}
 		return null;
+	}
+	
+	/**
+	 * 
+	 * @return 				all the graphics objects displayed by this list
+	 */
+	public ArrayList< R > getAllGraphics() {
+		ArrayList< R > rtn = new ArrayList< R >();
+		for ( GraphicListElement e : this.m_list ) {
+			rtn.add( e.getGraphics() );
+		}
+		return rtn;
 	}
 	
 	/**

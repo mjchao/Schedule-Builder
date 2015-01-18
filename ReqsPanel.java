@@ -1,5 +1,6 @@
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Cursor;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.event.MouseAdapter;
@@ -26,10 +27,16 @@ public class ReqsPanel extends JPanel {
 	CoursesPanel pnlCourses;
 	private GraphicList< Req , ReqDisplay > pnlList;
 	
+	private CommandsPanel pnlParent;
+	
 	public ReqsPanel() {
 		setLayout( new BorderLayout() );
 		this.pnlList = new GraphicList< Req , ReqDisplay >( 20 );
 		this.add( this.pnlList , BorderLayout.CENTER );
+	}
+	
+	public void setCommandsTab( CommandsPanel ct ) {
+		this.pnlParent = ct;
 	}
 	
 	public void setCoursesPanel( CoursesPanel courses ) {
@@ -159,6 +166,8 @@ public class ReqsPanel extends JPanel {
 			
 			this.setOpaque( true );
 			markAsIncomplete();
+			
+			this.setCursor( new Cursor( Cursor.HAND_CURSOR ) );
 		}
 		
 		public void setGainedFocus() {
@@ -166,9 +175,9 @@ public class ReqsPanel extends JPanel {
 			this.lblDisplay.setText( "<html><u>" + this.m_req.getDisplay() + "</u></html>" );
 			
 			Color fg = Color.blue;
-			this.setForeground( fg );
+			this.lblDisplay.setForeground( fg );
 			
-			Color bg = Color.gray;
+			Color bg = Color.lightGray;
 			this.setBackground( bg );
 		}
 		
@@ -177,7 +186,7 @@ public class ReqsPanel extends JPanel {
 			this.lblDisplay.setText( this.m_req.getDisplay() );
 			
 			Color fg = Color.black;
-			this.setForeground( fg );
+			this.lblDisplay.setForeground( fg );
 			
 			Color bg = UIManager.getLookAndFeelDefaults().getColor( "Label.background" );
 			this.setBackground( bg );
@@ -226,6 +235,7 @@ public class ReqsPanel extends JPanel {
 		@Override
 		public void mousePressed( MouseEvent e ) {
 			ReqsPanel.this.pnlCourses.loadReq( this.m_reqDisp.getReq() );
+			pnlParent.showCourseTab();
 		}
 	}
 }

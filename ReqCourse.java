@@ -9,7 +9,7 @@ public class ReqCourse extends Req {
 
 	@Override
 	String getDisplay() {
-		return this.course.m_courseName;
+		return this.course.getDisplayString();
 	}
 
 	@Override

@@ -11,7 +11,8 @@ public class CourseDataParser {
 	
 	//Global variables that are necessary
 	private String title = null, description = null, prereqs = null;
-	int credits;
+	private int credits;
+	private String courseName = "";
 	
 	private ArrayList< ArrayList< String > > prereqsList;
 	//Constructor. Useless
@@ -36,6 +37,9 @@ public class CourseDataParser {
 		    while ((text = in.readLine()) != null) {
 		        if(text.contains("Title:") != false){
 		        	title = text.substring(7);
+		        }
+		        else if ( text.contains( "Name:" ) ) {
+		        	courseName = text.substring( 6 );
 		        }
 		        else if(text.contains("Credits:") != false){
 		        	String temp = text.substring(9);
@@ -143,6 +147,14 @@ public class CourseDataParser {
 	
 	public String getTitle() {
 		return this.title;
+	}
+	
+	public String getCourseName() {
+		return this.courseName;
+	}
+	
+	public int getNumCredits() {
+		return this.credits;
 	}
 	
 	public String getDescription() {

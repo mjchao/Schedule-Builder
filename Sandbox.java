@@ -1,6 +1,7 @@
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -42,6 +43,7 @@ public class Sandbox extends JPanel {
 			addSemester( i );
 		}
 		setSelectedSemester( this.m_semesters.get( 0 ) );
+		setBackground( Color.white );
 	}
 	
 	public void setReqsPanel( ReqsPanel reqs ) {
@@ -265,6 +267,13 @@ public class Sandbox extends JPanel {
 		@Override
 		public void paintComponent( Graphics g ) {
 			super.paintComponent( g );
+			g.drawString( "Semester " + (this.m_semesterId+1) , 3, 15 );
+			ArrayList< CourseButton > coursesInSemester = getCoursesInSemester( this.m_semesterId );
+			int numCredits = 0;
+			for ( CourseButton b : coursesInSemester ) {
+				numCredits += b.m_course.m_numCredits;
+			}
+			g.drawString( "Credits: " + numCredits , 3 , SEMESTER_HEIGHT-10 );
 		}
 	}
 	
@@ -314,8 +323,9 @@ public class Sandbox extends JPanel {
 		
 		public CourseButton( Course c ) {
 			this.m_course = c;
-			setText( c.m_courseName );
+			setText( c.getShortDisplayString() );
 			this.unflagMissingPrereq();
+			this.setCursor( new Cursor( Cursor.HAND_CURSOR ) );
 		}
 		
 		public Course getCourse() {

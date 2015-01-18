@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -26,16 +27,18 @@ public class Main extends JApplet {
 		
 		Sandbox pnlSandbox = new Sandbox();
 		JPanel pnlSandboxPadding = new JPanel( new FlowLayout( FlowLayout.LEFT ) );
+		pnlSandboxPadding.setPreferredSize( new Dimension( Sandbox.SEMESTER_WIDTH+30 , Sandbox.SEMESTER_HEIGHT*Sandbox.NUM_SEMESTERS+10 ) );
 		pnlSandboxPadding.add( pnlSandbox );
 		JScrollPane scrSandbox = new JScrollPane( pnlSandboxPadding );
 		add( scrSandbox , BorderLayout.WEST );
 		
 		ReqsPanel pnlReqs = new ReqsPanel();
 		
+		CourseInfoPanel pnlCourseInfo = new CourseInfoPanel();
+		
 		CoursesPanel pnlCourses = new CoursesPanel();
-		CommandsTab tbCommands = new CommandsTab( pnlCourses , pnlReqs );
-		JScrollPane scrCommands = new JScrollPane( tbCommands );
-		add( scrCommands , BorderLayout.CENTER );
+		CommandsPanel tbCommands = new CommandsPanel( pnlCourses , pnlReqs , pnlCourseInfo );
+		add( tbCommands , BorderLayout.CENTER );
 		setVisible( true );
 		
 		pnlSandbox.setReqsPanel( pnlReqs );
@@ -51,16 +54,7 @@ public class Main extends JApplet {
 		pnlSandbox.addCourse( c4 );
 		pnlSandbox.repaint();*/
 		
-		for ( Course c : courses ) {
-			pnlCourses.addCourseToList( c );
-			if ( c.m_courseName.equals( "EECS281" ) ) {
-				for ( CourseGroup g : c.m_prereqs ) {
-					for ( Course c2 : g.m_courses ) {
-						System.out.println( c2.m_courseName );
-					}
-				}
-			}
-		}
+		pnlCourses.loadAllCourses( courses );
 		
 		for ( Req r : reqs ) {
 			pnlReqs.addReqs( r );

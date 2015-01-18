@@ -40,7 +40,7 @@ public class CourseLoader {
 		if ( !f.isDirectory() ) {
 			CourseDataParser p = new CourseDataParser( f.getPath() );
 			for ( Course c : courses ) {
-				if ( c.m_courseName.equals( p.getTitle() ) ) {
+				if ( c.m_courseId.equals( p.getTitle() ) ) {
 					addPrereqs( c , p , courses );
 					break;
 				}
@@ -56,6 +56,8 @@ public class CourseLoader {
 	
 	public Course createCourse( CourseDataParser p ) {
 		Course rtn = new Course( p.getTitle() );
+		rtn.m_numCredits = p.getNumCredits();
+		rtn.m_courseName = p.getCourseName();
 		return rtn;
 	}
 	
@@ -65,7 +67,7 @@ public class CourseLoader {
 			ArrayList< Course > coursesInGroup = new ArrayList< Course >();
 			for ( String s : reqGroup ) {
 				for ( int i=0 ; i<courses.size() ; i++ ) {
-					if ( courses.get( i ).m_courseName.equals( s ) ) {
+					if ( courses.get( i ).m_courseId.equals( s ) ) {
 						coursesInGroup.add( courses.get( i ) );
 					}
 				}

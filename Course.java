@@ -3,13 +3,15 @@ import java.util.ArrayList;
 
 public class Course {
 
+	public String m_courseId;
 	public String m_courseName;
+	public int m_numCredits;
 	public boolean m_isRepeatable = false;
 	public ArrayList< CourseGroup > m_prereqs = new ArrayList< CourseGroup >();
 	
 	
 	public Course( String courseName ) {
-		this.m_courseName = courseName;
+		this.m_courseId = courseName;
 	}
 	
 	public boolean isPrereqFor( Course other ) {
@@ -26,7 +28,7 @@ public class Course {
 	@Override
 	public boolean equals( Object o ) {
 		if ( o instanceof Course ) {
-			return this.m_courseName.equals( ( (Course) o ).m_courseName );
+			return this.m_courseId.equals( ( (Course) o ).m_courseId );
 		}
 		else {
 			return false;
@@ -36,5 +38,13 @@ public class Course {
 	@Override
 	public int hashCode() {
 		return super.hashCode();
+	}
+	
+	public String getDisplayString() {
+		return this.m_courseId + ": " + this.m_courseName;
+	}
+	
+	public String getShortDisplayString() {
+		return this.m_courseId;
 	}
 }
